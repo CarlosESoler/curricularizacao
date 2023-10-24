@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Eye</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BenchNine:wght@300&family=Caladea&display=swap" rel="stylesheet">    
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <script src="script.js"></script>
+    <script src="scriptCamera.js"></script>
+    <script src="ntc.js"></script>
+
+
+    <style>
+
+     body{
+        
+        background-image: url('img/fundo.png');
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+    </style>
+    
+</head>
+<body>
+
+    <header>
+        <nav class="nav-bar">
+
+            <div class="logo">
+                <img src="img/logoBranca.png" alt="TechEye">
+            </div><!--logo-->
+
+            <div class="nav-tittle">
+                <h1>Tech Eye</h1>
+            </div><!--nav-tittle-->
+
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a class="nav-link" href="#">Sobre Nos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Fale Conosco</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Patrocinadores</a></li>
+                </ul>
+           </div><!--nav-list-->
+
+           <div class="mobile-menu-icon">
+               <button onclick="menuShow()"><img class="icon" src="img/menu-icon.jpg" alt="menuIcon"></button>
+           </div><!--mobile-menu-icon-->
+
+        </nav><!--nav-bar-->
+
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a class="nav-link" href="#">Sobre Nos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Fale Conosco</a></li>
+                <li class="nav-item bottom"><a class="nav-link" href="#">Patrocinadores</a></li>
+            </ul>
+        </div><!--mobile-menu-->
+    </header>
+
+    <section id="main">
+        <div class="main-video">
+            <video id="video" autoplay></video>
+        </div><!--main-video-->
+
+        <div class="main-list-information">
+            <h1 class="tagsInformation tag-hex" id="hex">Hexadecimal</h1>
+            <h1 class="tagsInformation tag-rgb" id="rgb">Rgb</h1>
+            <div class="tag-color" id="result"></div>
+            <h1 class="tagsInformation tag-name" id="colorName">A seguir, falarei o nome da cor predominante</h1>
+        </div><!--main-list-information-->
+
+    </section><!--main-->
+
+<footer>
+    <div class="footer-main">
+        
+        <div class="list-names">
+            <h1>Equipe de Desenvolvimento</h1>
+                <div class="list-names-devs">
+                    <div class="names-devs-one">
+                        <p>Andrei Leite</p>
+                        <p>Carlos Eduardo Soler</p>
+                    </div> <!--names-devs-one-->
+
+                    <div class="names-devs-two">
+                        <p>Luis Felipe Peirão</p>
+                        <p>Luis Felipe Richter Barnabé</p>
+                    </div> <!--names-devs-two-->
+
+                </div><!--list-names-devs--> 
+        </div><!--list-names-->
+
+        <div class="footer-center-image">
+            <img src="img/logo.png" alt="TechEye">
+        </div><!--footer-center-image-->
+
+        <div class="footer-menssage">
+            <p>Enxergue o Mundo com Outros Olhos!</p>
+        </div><!--footer-menssage-->
+
+
+
+    </div><!--footer-main-->
+</footer>
+
+
+
+    
+</body>
+</html>

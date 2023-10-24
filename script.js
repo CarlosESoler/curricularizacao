@@ -50,7 +50,7 @@ let onScanColorClick = () => {
             const image = new Image()
             image.src = canvas.toDataURL()
             image.onload = () => convertImage(image)
-        }, 5000)
+        }, 4000)
     })
 }
 
@@ -101,10 +101,11 @@ let convertImage = (image) => {
         fetch(apiUrlToTranslateColor).then(response => response.json()).then(data => {
             let colorNameTranslated = data.responseData.translatedText
             document.getElementById("colorName").textContent = colorNameTranslated.toUpperCase()
+            talk(colorNameTranslated);
         })
     })
 
-    talk();
+    
 }
 
 let i2hex = (i) => {
@@ -119,10 +120,10 @@ let drawImageToCanvas = (image) => {
     return canvas
 }
 
-function talk(){
+function talk(color){
     var speech = new SpeechSynthesisUtterance();
     speech.lang = "pt-BR";
-    speech.text = document.getElementById("colorName").textContent;
+    speech.text = color;
     speech.volume = 1;
     speech.rate = 1;
     speech.pitch = 1;
